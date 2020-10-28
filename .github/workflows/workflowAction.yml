@@ -1,0 +1,11 @@
+name: Two Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Imar
+        id: Hello
+        uses: izm20/my-action-test@v1.0.0
+        with: 
+          FIRST_NAME: 'Imar'
